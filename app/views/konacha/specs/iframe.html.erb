@@ -10,6 +10,10 @@
     <% end %>
 
     <%= javascript_include_tag "chai", "konacha/iframe", :debug => false %>
+    <%- @spec_helpers.each do |spec_helper| %>
+      <%# Use :debug => false for spec helpers to improve page load performance. %>
+      <%= javascript_include_tag spec_helper, :debug => false %>
+    <%- end %>
     <%= javascript_include_tag @spec.asset_name %>
   </head>
   <body>

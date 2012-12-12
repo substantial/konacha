@@ -37,4 +37,5 @@ end
 Konacha.configure do |config|
   # We don't have an application.css in our dummy app.
   config.stylesheets = []
+  config.spec_helpers = []
 end
