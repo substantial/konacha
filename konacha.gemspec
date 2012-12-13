@@ -25,6 +25,7 @@ the asset pipeline and engines.}
   gem.add_dependency "sprockets"
   gem.add_dependency "capybara"
   gem.add_dependency "colorize"
+  gem.add_dependency "thin"
 
   gem.add_development_dependency "jquery-rails"
   gem.add_development_dependency "rspec-rails", "~> 2.12"
